@@ -350,10 +350,6 @@ PFOA_mix_Chen_Kelly_low = data.frame(time=c(1,5,10,15,20,22,24,25,32,40,48),
                                      Liver_low=c(56.04,187.34,197.00,153.20,165.21,229.07,212.43,259.76,85.93,45.83,25.71)/1000,
                                      Ovaries_low=c(17.15,72.77,129.71,68.68,115.55,129.71,173.18,109.06,48.55,28.86,8.09)/1000) # microg/g water 0.86 microg/L
 
-wen = read_excel("C:/Users/elena/OneDrive - Umeå universitet/Documents/WP3/Stefan zf study project/data_from_papers/Wen_et_al2019_extracted.xlsx", sheet ="microg")
-PFOA_wen = select(wen, c("time", "PFOA_blood", "PFOA_liver", "PFOA_ovary", "PFOA_brain"))
-
-
 #===============================================
 # end section
 #===============================================
@@ -380,7 +376,7 @@ chem_params <- c(
   Pskinb_1 = 0.5,
   Pkidb_1 = 1,
 
-  K_1 = 1/0.00083, # 1/Kd with Kd in M  PFOA maybe multiply by the number of active sites
+  K_1 = 1/0.00083, # 1/Kd with Kd in M  PFOA
   # Exposure quantity (microg)
   WaterExposure_1  = 8.91*10^(-3) # microg/mL
 )
